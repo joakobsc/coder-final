@@ -12,36 +12,6 @@
     font-weight: <weight>;
     font-style: normal;
   }*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-  font-weight: 700;
-}
-
-body {
-  background-color: rgba(21, 21, 21, 0.95);
-}
-
-body header .div-nav {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
-}
-body header .div-nav nav div a {
-  height: 8vh;
-}
-body header .div-nav nav div a img {
-  height: 90%;
-}
-body header .div-nav nav div div ul li a {
-  display: inline-block;
-  color: #fff;
-  font-weight: bold;
-}
-body header .div-nav nav div div ul li a:hover, body header .div-nav nav div div ul li a:active {
-  color: #C99383;
-}
-
 body .header-nosotros, .turismo main .card, .turismo, body main .gran-proyecto .item4, body main .gran-proyecto .item3, body main .gran-proyecto .item2, body main .gran-proyecto .item1, body .header-contacto, body main .galeria .container .item5, body main .galeria .container .item6, body main .galeria .container .item7, body main .galeria .container .item8, body main .galeria .container .item9, body main .galeria .container .item10, body .header-index {
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,6 +67,36 @@ body main .information, body main .galeria, body main .conocer {
     border: rgba(255, 255, 255, 0.2) solid 2px;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+body {
+  background-color: rgba(21, 21, 21, 0.95);
+}
+
+body header .div-nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+}
+body header .div-nav nav div a {
+  height: 8vh;
+}
+body header .div-nav nav div a img {
+  height: 90%;
+}
+body header .div-nav nav div div ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+}
+body header .div-nav nav div div ul li a:hover, body header .div-nav nav div div ul li a:active {
+  color: #C99383;
+}
+
 body .header-index {
   height: 85vh;
   background-image: url(../multimedia/fondo-index.webp);
@@ -304,9 +304,10 @@ body main #Nuestro-Próximo-Gran-Proyecto {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body main .gran-proyecto {
+  margin: 1%;
   min-height: 55vh;
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 1fr);
 }
 body main .gran-proyecto .item1 {
@@ -455,7 +456,7 @@ body .header-nosotros {
   background-position: right;
 }
 body main .container-nosotros {
-  width: 100vw;
+  width: 100%;
 }
 body main .container-nosotros .descripcion {
   color: #f5f4f4;
@@ -499,38 +500,6 @@ footer .redes a i {
   letter-spacing: 1.2vw;
 }
 
-/*responsive header y footer*/
-@media only screen and (min-width: 1024px) {
-  body header .div-nav {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  body header .div-nav nav div a img {
-    height: 90%;
-  }
-  body header .div-nav nav div div ul {
-    height: 60%;
-  }
-  body header .div-nav nav div div ul li {
-    padding: 0 1vw;
-  }
-  body header .div-nav nav div div ul li a {
-    height: 20%;
-    font-size: 1.4vh;
-  }
-  body footer .copyright p {
-    font-size: 2vh;
-    margin: 0;
-    padding: 0;
-  }
-  body footer .redes a {
-    text-decoration: none;
-  }
-  body footer .redes a i {
-    font-size: 2vw;
-    letter-spacing: 2vw;
-  }
-}
 @media only screen and (min-width: 540px) {
   body .header-index {
     height: 100vh;
@@ -770,7 +739,6 @@ footer .redes a i {
     height: fit-content;
   }
   body main .container-nosotros {
-    width: 100vw;
     margin: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -795,6 +763,38 @@ footer .redes a i {
   body main .container-nosotros .descripcion p {
     font-size: 0.85vw;
     padding-bottom: 0;
+  }
+}
+/*responsive header y footer*/
+@media only screen and (min-width: 1024px) {
+  body header .div-nav {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  body header .div-nav nav div a img {
+    height: 90%;
+  }
+  body header .div-nav nav div div ul {
+    height: 60%;
+  }
+  body header .div-nav nav div div ul li {
+    padding: 0 1vw;
+  }
+  body header .div-nav nav div div ul li a {
+    height: 20%;
+    font-size: 1.4vh;
+  }
+  body footer .copyright p {
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+  body footer .redes a {
+    text-decoration: none;
+  }
+  body footer .redes a i {
+    font-size: 2vw;
+    letter-spacing: 2vw;
   }
 }
 

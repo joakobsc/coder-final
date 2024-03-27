@@ -10,9 +10,10 @@ body{
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         }
         .gran-proyecto{
+            margin: 1%;
             min-height: 55vh;
             display: grid;
-            grid-template-columns: repeat(2, 50vw);
+            grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(3, 1fr);
             .item1{
                 border: map-get($colores, color-hover) solid 2px;
