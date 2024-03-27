@@ -1,0 +1,72 @@
+/*mobile first emprendimientos*/
+body{
+    main{
+        #Nuestro-Próximo-Gran-Proyecto{
+            color: map-get($colores, color-texto);
+            font-weight: 900;
+            font-size: 5vw;
+            text-align: center;
+            padding: 2vw;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+        .gran-proyecto{
+            min-height: 55vh;
+            display: grid;
+            grid-template-columns: repeat(2, 50vw);
+            grid-template-rows: repeat(3, 1fr);
+            .item1{
+                border: map-get($colores, color-hover) solid 2px;
+                background-image: url(../multimedia/proyecto-i-hd.webp);
+                @extend %background-image;
+                grid-column: 1/3;
+                grid-row: 1/2;
+                transition: $transition-image;
+                &:hover{
+                    transform: scale($scale-image);
+                    z-index: 1;
+                  }
+            }
+            .item2{
+                border: map-get($colores, color-hover) solid 2px;
+                background-image: url(../multimedia/proyecto-iv-hd.webp);
+                @extend %background-image;
+                background-position: bottom;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                transition: all $transition-image;
+                &:hover{
+                    transform: scale($scale-image);
+                    z-index: 1;
+                  }
+            }
+            .item3{
+                border: map-get($colores, color-hover) solid 2px;
+                background-image: url(../multimedia/proyecto-iii-hd.webp);
+                @extend %background-image;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                background-position: bottom;
+                transition: $transition-image;
+                &:hover{
+                    transform: scale($scale-image);
+                    z-index: 1;
+                  }
+            }
+            .item4{
+                border: map-get($colores, color-hover) solid 2px;
+                background-image: url(../multimedia/proyecto-ii-hd.webp);
+                @extend %background-image;
+                background-position: bottom;
+                grid-column: 1/3;
+                grid-row: 3/4;
+                transition: $transition-image;
+                &:hover{
+                    transform: scale($scale-image);
+                    z-index: 1;
+                  }
+            }
+            
+        }
+        
+    }
+}

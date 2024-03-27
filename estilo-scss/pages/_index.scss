@@ -1,0 +1,143 @@
+body{
+    .header-index{
+        height: 85vh;
+        background-image: url(../multimedia/fondo-index.webp);
+        @extend %background-image;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+            h1{
+                color: #fff;
+                text-align: center;
+                background-color: #00000054;
+                font-size: 3.5vh;
+                font-weight: 900 ;
+                margin-bottom:10vh;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    main{
+        .conocer{
+            background-color: map-get($colores, color-fondo-oscuro);
+            @extend %flex-center;
+            align-items: center;
+            text-align: center;
+            height: 15vh;
+            h2{
+                font-size: 4.5vw;
+                color: map-get($colores, color-texto);
+                strong{
+                    font-size: 1.3em;
+                    color: map-get($colores, color-hover);
+                }
+            }
+        }
+        .segundo-nav{
+            background-color: map-get($colores, color-fondo-claro);
+            ul{
+                height: 6vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    a{
+                        color: map-get($colores, color-texto-medio);
+                        text-decoration: none;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        &:hover, &:active{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .galeria{
+            @extend %flex-center;
+            .container{
+                max-width: 98vw;
+                height: 181vh;
+                .item5, .item6, .item7, .item8, .item9, .item10{
+                    height: 30vh;
+                    @extend %background-image;
+                    div{
+                        position: absolute;
+                        bottom: 0;
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.527));
+                        h3{
+                            @include Texto-discriptivo(#fff, 4.5vw,  bold, "Mulish")
+                        }
+                        p{
+                            @include Texto-discriptivo(#fff, 4vw, bold, "Mulish")
+                        }
+                    }
+                }
+                .item5{
+                    background-image: url(../multimedia/quincho.webp);
+                }
+                .item6{
+                    background-image: url(../multimedia/living-comedor.webp);
+                }
+                .item7{
+                    background-image: url(../multimedia/patio-suite.webp);
+                }
+                .item8{
+                    background-image: url(../multimedia/baño.webp);
+                }
+                .item9{
+                    background-image: url(../multimedia/parrilla.webp);
+                }
+                .item10{
+                    background-image: url(../multimedia/cocina.webp);
+                }
+            }
+        }
+        .gap{
+            background-color: map-get($colores, color-fondo-oscuro);
+            height: 8vh;
+        }
+        .information{
+            height: 110vh;
+            background-color: map-get($colores, color-fondo-claro);
+            @extend %flex-center;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            .info-i, .info-ii, .info-iii{
+                margin: 15px;
+                .icon{
+                    i{
+                        font-size: 9vw;
+                        margin-bottom: 5vw;
+                        color: map-get($colores, color-icono);
+                    }
+                    h3{
+                        font-size: 5vw;
+                        color: map-get($colores, color-texto-secundario);
+                    }
+                    p{
+                        font-family: "Mulish";
+                        font-size: 4.5vw;
+                        color: map-get($colores, color-texto-medio);
+                    }
+                }
+            }
+        }
+        .map{
+            iframe{
+                width: 100%;
+                height: 30vh;
+                padding: 5vh 2vw;
+            }
+          }
+    }
+}
+
+  
+  

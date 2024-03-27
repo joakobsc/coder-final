@@ -1,0 +1,91 @@
+/*hoteleria mobile first*/
+.turismo{
+    background-image: url(../multimedia/lamp.webp);
+    @extend %background-image;
+    background-attachment: fixed;
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+        padding-bottom: 29vh;
+        .nuestros-hoteles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                color: map-get($colores, color-texto);
+                background-color: rgba(26, 25, 25, 0.5803921569);
+                border-radius: 10px;
+                width: 60vw;
+                font-size: 6vw;
+                padding: 1vw 0vw;
+                margin-top: 3vw;
+                text-align: center;
+            }
+            h2{
+                color: #0c0c0c;
+                background-color: rgba(255, 255, 255, 0.548);
+                border-radius: 10px;
+                width: 65vw;
+                padding: 1vw 0px;
+                text-align: center;
+                font-size: 3vw;
+                margin-top: 3vw;
+            }
+            i{
+                    font-size: 6vh;
+                    color: map-get($colores, color-icono);
+            }
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        .card{
+            @extend %background-image;
+            border: solid map-get($colores, color-texto-medio) 5px;
+            height: 40vh;
+            margin: 3vw 3vw 20vw 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            button{
+                display: inline;
+                margin-bottom: 2vw;
+                background: none;
+                border: 0;
+                a{
+                    background-color: map-get($colores, color-fondo);
+                    font-size: 5vw;
+                    text-decoration: none;
+                    border: solid white 2px;
+                    border-radius: 6px;
+                    padding: 2vw;
+                    color: map-get($colores, color-texto);
+                    &:hover{
+                        transform: scale(1.05);
+                        animation: brillar 1s infinite alternate backwards;
+                    }
+                    &:active{
+                        transform: scale(1.05);
+                        animation: brillar 1s infinite alternate backwards;
+                    }
+                }
+            }
+        }
+        .bs{
+            background-image: url(../multimedia/buenos-aires.webp);
+        }
+        .mdq{
+            background-image: url(../multimedia/mar-del-plata.webp);
+        }
+        .córdoba{
+            background-image: url(../multimedia/cordoba.webp);
+        }
+        .este{
+            background-image: url(../multimedia/punta-del-este.webp);
+        }
+    }
+}

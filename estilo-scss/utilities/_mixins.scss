@@ -1,0 +1,11 @@
+@mixin background-mQ ($size, $repeat, $position){
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+@mixin Texto-discriptivo($color, $font-size, $weight, $family){
+    color: $color;
+    font-size: $font-size;
+    font-weight: $weight;
+    font-family: $family;
+}

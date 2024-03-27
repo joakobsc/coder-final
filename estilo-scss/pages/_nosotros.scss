@@ -1,0 +1,27 @@
+/* Nosotros: mobile first*/
+body{
+    .header-nosotros{
+        height: 85vh;
+        background-image: url(../multimedia/img-nosotros.webp);
+        mask-image: linear-gradient(black 80%, transparent);
+        @extend %background-image;
+        background-position: right;
+    }
+    main{
+        .container-nosotros{
+            width: 100vw;      
+            .descripcion{
+                color: #f5f4f4;
+                padding: 8vw;
+                h1{
+                    font-size: 5vw;
+                    color: map-get($colores, color-hover);
+                }
+                p{
+                    text-indent: 5vw;
+                    font-size: 2.7vw;
+                }
+            }
+        }
+    }
+}

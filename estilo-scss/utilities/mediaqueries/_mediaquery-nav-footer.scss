@@ -1,0 +1,50 @@
+/*responsive header y footer*/
+@media only screen and (min-width: 1024px){
+    body{
+        header{
+            .div-nav{
+                padding-left: 3%;
+                padding-right: 3%;
+                nav{
+                    div{
+                        a{
+                            img{
+                                height: 90%;
+                            }
+                        }
+                        div{
+                            ul{
+                                height: 60%;
+                                li{
+                                    padding: 0 1vw;
+                                    a{
+                                        height: 20%;
+                                        font-size: 1.4vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        footer{
+            .copyright{
+                p{
+                    font-size: 2vh;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .redes{
+                a{
+                    text-decoration: none;
+                    i{
+                        font-size: 2vw;
+                        letter-spacing: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}

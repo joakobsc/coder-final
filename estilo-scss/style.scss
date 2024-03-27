@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+/*.mulish-<uniquifier> {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+  
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+/*.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+@import 'generales/maps';
+@import 'utilities/variables';
+@import 'utilities/extends';
+@import 'utilities/mixins';
+@import 'utilities/animation/animation-button.scss';
+@import 'generales/generales';
+@import 'componentes/header';
+@import 'pages/index';
+@import 'pages/contacto';
+@import 'pages/emprendimientos';
+@import 'pages/hotelería';
+@import 'pages/nosotros';
+@import 'componentes/footer';
+@import 'utilities/mediaqueries/mediaquery-index';
+@import 'utilities/mediaqueries/mediaquery-contacto';
+@import 'utilities/mediaqueries/mediaquery-emprendimientos';
+@import 'utilities/mediaqueries/mediaquery-hotelería';
+@import 'utilities/mediaqueries/_mediaquery-nosotros';
+@import 'utilities/mediaqueries/mediaquery-nav-footer';
