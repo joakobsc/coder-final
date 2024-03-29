@@ -1,6 +1,43 @@
 /*mobile first emprendimientos*/
 body{
     main{
+        .primer-carrusel{
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        .carousel-caption{
+                            background-color: rgba(105, 105, 105, 0.385);
+                            color: rgb(255, 255, 255);
+                            h5{
+                                font-size: 1.3rem;
+                            }
+                            p{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .proyectos{
+            background-color: rgb(241, 246, 251);
+            .accordion{
+                --bs-accordion-bg: transparent;
+                --bs-accordion-border-color: none;
+                .accordion-item{
+                    padding-bottom: 1vh;
+                    .accordion-header{
+                        .accordion-button{
+                            height: 2vh;
+                            border-radius: 10px;
+                            --bs-accordion-btn-bg: #d2d2d2;
+                            --bs-accordion-active-bg: #d2dde8;
+                            --bs-accordion-active-color:#000000;
+                        }
+                    }
+                }
+            }
+        }
         #Nuestro-Próximo-Gran-Proyecto{
             color: map-get($colores, color-texto);
             font-weight: 900;

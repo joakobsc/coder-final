@@ -295,6 +295,33 @@ body main .comentarios div form .enviar:active {
 }
 
 /*mobile first emprendimientos*/
+body main .primer-carrusel .carousel .carousel-inner .carousel-item .carousel-caption {
+  background-color: rgba(105, 105, 105, 0.385);
+  color: rgb(255, 255, 255);
+}
+body main .primer-carrusel .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 1.3rem;
+}
+body main .primer-carrusel .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.3rem;
+}
+body main .proyectos {
+  background-color: rgb(241, 246, 251);
+}
+body main .proyectos .accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: none;
+}
+body main .proyectos .accordion .accordion-item {
+  padding-bottom: 1vh;
+}
+body main .proyectos .accordion .accordion-item .accordion-header .accordion-button {
+  height: 2vh;
+  border-radius: 10px;
+  --bs-accordion-btn-bg: #d2d2d2;
+  --bs-accordion-active-bg: #d2dde8;
+  --bs-accordion-active-color:#000000;
+}
 body main #Nuestro-Próximo-Gran-Proyecto {
   color: #fff;
   font-weight: 900;
@@ -529,7 +556,7 @@ footer .redes a i {
     height: 10vh;
   }
   body main .information {
-    height: 100vh;
+    height: 110vh;
   }
   body main .information .info-i, body main .information .info-ii, body main .information .info-iii {
     margin: 40px;
@@ -782,7 +809,6 @@ footer .redes a i {
   }
   body header .div-nav nav div div ul li a {
     height: 20%;
-    font-size: 1.4vh;
   }
   body footer .copyright p {
     font-size: 2vh;
