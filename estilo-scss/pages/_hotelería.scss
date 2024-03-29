@@ -1,8 +1,14 @@
-/*hoteleria mobile first*/
+//hoteleria mobile first
+
+//Fondo body hotelería
+
 .turismo{
     background-image: url(../multimedia/lamp.webp);
     @extend %background-image;
     background-attachment: fixed;
+
+   //header titulos hotelería
+
     header{
         display: flex;
         flex-direction: column;
@@ -39,6 +45,7 @@
             }
         }
     }
+    //Cards Hotelería
     main{
         display: flex;
         flex-direction: column;

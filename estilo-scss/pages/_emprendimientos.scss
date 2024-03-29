@@ -1,6 +1,7 @@
-/*mobile first emprendimientos*/
+//mobile first emprendimientos
 body{
     main{
+        //carousel
         .primer-carrusel{
             .carousel{
                 .carousel-inner{
@@ -19,6 +20,9 @@ body{
                 }
             }
         }
+
+        //accordion
+
         .proyectos{
             background-color: rgb(241, 246, 251);
             .accordion{
@@ -38,6 +42,8 @@ body{
                 }
             }
         }
+
+        //Próximo proyecto
         #Nuestro-Próximo-Gran-Proyecto{
             color: map-get($colores, color-texto);
             font-weight: 900;

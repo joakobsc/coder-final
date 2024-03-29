@@ -1,4 +1,7 @@
+//mobile first index
+
 body{
+    //Header
     .header-index{
         height: 85vh;
         background-image: url(../multimedia/fondo-index.webp);
@@ -19,6 +22,7 @@ body{
         }
     }
     main{
+        //concer
         .conocer{
             background-color: map-get($colores, color-fondo-oscuro);
             @extend %flex-center;
@@ -34,6 +38,7 @@ body{
                 }
             }
         }
+        //segundo nav
         .segundo-nav{
             background-color: map-get($colores, color-fondo-claro);
             ul{
@@ -57,6 +62,8 @@ body{
                 }
             }
         }
+
+        //galería
         .galeria{
             @extend %flex-center;
             .container{
@@ -101,6 +108,8 @@ body{
             background-color: map-get($colores, color-fondo-oscuro);
             height: 8vh;
         }
+
+        //information
         .information{
             height: 110vh;
             background-color: map-get($colores, color-fondo-claro);
