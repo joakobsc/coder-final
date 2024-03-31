@@ -1,32 +1,31 @@
 body{
-  header{
-    .div-nav{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
-      nav{
-        div{
-          a{
-            height: 8vh;
-            img{
-              height: 90%;
-            }
-          }
-          div{
-            ul{
-              li{
-                a{
-                  display: inline-block;
-                  color: map-get($colores, color-texto);
-                  font-weight: bold;
-                  &:hover, &:active{
-                    color: map-get($colores, color-hover);
-                  }
+    header{
+        .div-nav{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+            nav{
+                div{
+                    a{
+                        height: 8vh;
+                        img{
+                            height: 90%;
+                        }
+                    }
+                    div{
+                        ul{
+                            li{
+                                a{
+                                    display: inline-block;
+                                    color: map-get($colores, color-texto);
+                                    font-weight: bold;
+                                    &:hover, &:active{
+                                    color: map-get($colores, color-hover);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-        
-      }
     }
-  }
 }
